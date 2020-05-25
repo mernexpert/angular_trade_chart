@@ -1,0 +1,78 @@
+.box {
+  padding: 10px 40px;
+  background: #fff;
+  text-align: center;
+  margin: 5px;
+}
+.box h4 {
+  font-size: 40px;
+  font-weight: 300;
+  color:#40278c;
+}
+.box p {
+  font-size: 12px;
+  font-weight: 600;
+  color:#cfa256;
+}
+.box h4 .dollar{
+  font-size: 20px;
+  font-weight: 500;
+  color:#40278c;
+
+}
+.box  .plus
+{
+  font-size: 30px;
+  font-weight: 500;
+  color: chartreuse;
+}
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  margin: 20px 0px;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 50px;
+}
+.spacer
+{
+  padding:20px 60px;
+}
+.inactive {
+  display: none;
+}
+.active{
+  visibility: visible;
+}
+@media (max-width: 991.98px) {
+  .isMobile{
+    visibility:  visible;
+   }
+   .isDesktop{
+    display: none;
+   }
+ }
+
+
+@media (min-width: 992px) and (max-width: 1200px)  {
+  .isMobile{
+    display: none;
+  }
+  .isDesktop{
+   visibility: visible;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .isMobile{
+    display: none;
+  }
+  .isDesktop{
+   visibility: visible;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="container">
+<app-nav-menu
+ [bit]="dataModels[1].current.price"
+ [eth]="dataModels[2].current.price"
+ [lit]="dataModels[3].current.price"
+ [rip]="dataModels[4].current.price"></app-nav-menu>
+<app-show-index></app-show-index>
+<app-trade-chart
+[currentData]="dataModels[currentIndex].current"
+[gryData]="dataModels[0].current"
+ ></app-trade-chart>
+<app-gry-description></app-gry-description>
+</div>
+
+

@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "chart": "grayll-chart",
+    "default": "grayll-chart"
+  }
+}

@@ -1,0 +1,46 @@
+<!-- Desktop design-->
+<div class="container isDesktop">
+<div class="row vdivide spacer">
+  <div class="col-4">
+  <div class="box">
+  <h4><sup class="dollar">$</sup>{{price1}}<sup class="dollar">{{price2}}</sup></h4>
+   <p>{{chart_type}} {{priceIndex}}</p>
+  </div>
+  </div>
+  <div class="col-4">
+  <div class="box">
+  <h4><sup class="plus">+</sup><sup class="dollar">$</sup>{{roi_usd1}}<sup class="dollar">{{roi_usd2}}</sup></h4>
+  <p>ROI {{chart_type}} (USD)</p>
+  </div>
+  </div>
+  <div class="col-4">
+  <div class="box">
+  <h4><sup class="plus">+</sup>{{roi_percent1}}<sup class="dollar">{{roi_percent2}}</sup></h4>
+   <p>ROI {{chart_type}} (%)</p>
+  </div>
+</div>
+</div>
+</div>
+<!-- Mobile design-->
+<div class="container isMobile">
+<div class="row" *ngIf="id$|async as id">
+  <div class="col-12" [ngClass]="active">
+  <div class="box">
+  <h4><sup class="dollar">$</sup>{{price1}}<sup class="dollar">{{price2}}</sup></h4>
+   <p>{{chart_type}} FIYAT</p>
+  </div>
+  </div>
+  <div class="col-12" [ngClass]="active">
+  <div class="box">
+  <h4><sup class="plus">+</sup><sup class="dollar">$</sup>{{roi_usd1}}<sup class="dollar">{{roi_usd2}}</sup></h4>
+  <p>ROI {{chart_type}} (USD)</p>
+  </div>
+  </div>
+  <div class="col-12" [ngClass]="active">
+  <div class="box">
+  <h4><sup class="plus">+</sup>{{roi_percent1}}<sup class="dollar">{{roi_percent2}}</sup></h4>
+   <p>ROI {{chart_type}} (%)</p>
+  </div>
+</div>
+</div>
+</div>

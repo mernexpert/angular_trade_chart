@@ -1,0 +1,100 @@
+
+
+li> a {
+  color:#2379d6;
+  font-weight: 50;
+  font-size: 12px;
+}
+.line
+{
+  position: relative;
+  border-bottom: 2px solid #dee5ec;
+  width: 100%;
+  top: -2px;
+}
+.nav-container
+{
+position: relative;
+z-index: 1;
+padding: 0px 10px;
+}
+li> a:hover, li> .active {
+  border-bottom: 1.5px solid #2379d6;
+}
+li> #EUR:hover, li> .activebtc {
+  border-bottom: 1.5px solid #03F4FC;
+}
+#EUR{
+color:#03F4FC;
+}
+li> #JPY:hover, li> .activeeth {
+  border-bottom: 1.5px solid #FFC0CB;
+}
+#JPY{
+  color:#FFC0CB;
+}
+li> #GBP:hover, li> .activelit {
+  border-bottom: 1.5px solid #900c3f;
+}
+#GBP{
+  color:#900c3f;
+}
+li> #CHF:hover, li> .activerip {
+  border-bottom: 1.5px solid #FFA700;
+}
+#CHF{
+  color:#FFA700;
+}
+
+li> a:hover, li> .active {
+  border-bottom: 1.5px solid #2379d6;
+}
+li> #BTC:hover, li> .activebtc {
+  border-bottom: 1.5px solid #03F4FC;
+}
+#BTC{
+color:#03F4FC;
+}
+li> #ETH:hover, li> .activeeth {
+  border-bottom: 1.5px solid #FFC0CB;
+}
+#ETH{
+  color:#FFC0CB;
+}
+li> #LIT:hover, li> .activelit {
+  border-bottom: 1.5px solid #900c3f;
+}
+#LIT{
+  color:#900c3f;
+}
+li> #RIP:hover, li> .activerip {
+  border-bottom: 1.5px solid #FFA700;
+}
+#RIP{
+  color:#FFA700;
+}
+
+
+
+@media (min-width: 993px) {
+  .nav-header2 {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 993px) {
+  .nav-header2 {
+    justify-content: center;
+  }
+  .nav-header1 {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-items: center;
+  }
+  .nav-div1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+

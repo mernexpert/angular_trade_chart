@@ -1,0 +1,48 @@
+<div class="container  nav-container">
+  <div class="row">
+    <div class="col-lg-6 nav-div1">
+      <ul class="nav nav-header1">
+        <li>
+          <a id={{index1}} class="nav-link" (click)="handlCurrency(1)" [ngClass]="{'activebtc':aelm==1}" (click)="aelm=1"
+            href="#">{{index1}} <span>| {{bit.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}}</span></a>
+        </li>
+        <li>
+          <a id={{index2}} class="nav-link" (click)="handlCurrency(2)" [ngClass]="{'activeeth':aelm==2}" (click)="aelm=2"
+            href="#">{{index2}} <span>| {{eth.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}}</span></a>
+        </li>
+        <li>
+          <a id={{index3}} class="nav-link" (click)="handlCurrency(3)" [ngClass]="{'activelit':aelm==3}" (click)="aelm=3"
+            href="#">{{index3}} <span>| {{lit.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}}</span></a>
+        </li>
+        <li>
+          <a id={{index4}} class="nav-link" (click)="handlCurrency(4)" [ngClass]="{'activerip':aelm==4}" (click)="aelm=4"
+            href="#">{{index4}} <span>| {{rip.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}}</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <ul class="nav nav-header2">
+        <li class="nav-item">
+          <a class="nav-link" (click)="handlTime(2)" [ngClass]="{'active':aelm1==1}" (click)="aelm1=1" href="#">5M</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="handlTime(5)" [ngClass]="{'active':aelm1==2}" (click)="aelm1=2" href="#">15M</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="handlTime(10)" [ngClass]="{'active':aelm1==3}" (click)="aelm1=3" href="#">30M</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="handlTime(20)" [ngClass]="{'active':aelm1==4}" (click)="aelm1=4" href="#">1H</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="handlTime(30)" [ngClass]="{'active':aelm1==5}" (click)="aelm1=5" href="#">4H</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="handlTime(40)" [ngClass]="{'active':aelm1==6}" (click)="aelm1=6" href="#">1D</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="line">
+</div>
